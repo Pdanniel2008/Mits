@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árazási Csomagok</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f0fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .pricing-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .pricing-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(106, 13, 173, 0.1);
+            width: 300px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: transform 0.3s ease, border 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            border-color: #8e44ad;
+        }
+
+        .pricing-card.popular {
+            border: 2px solid #8e44ad;
+            position: relative;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #8e44ad;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .pricing-card h3 {
+            color: #4a0e78;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .price {
+            font-size: 40px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .price span {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .features li {
+            margin-bottom: 12px;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+
+        .features li::before {
+            content: "✓";
+            color: #8e44ad;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #8e44ad;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            background-color: #6a0dad;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid #8e44ad;
+            color: #8e44ad;
+        }
+
+        .btn-outline:hover {
+            background-color: #ffffff;
+            color: white;
+        }
+        header {
+    background: linear-gradient(135deg, #6a0dad, #ffffff);
+    color: white;
+    padding: 25px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI API Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="verseny.html">Főoldal</a></li>
+                    <li><a href="product.html" class="active">AI API-k</a></li>
+                    <li><a href="priceing.html">Árazás</a></li>
+                    <li><a href="team.html">Csapat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="pricing-container">
+    
+    <div class="pricing-card">
+        <h3>Alap</h3>
+        <div class="price">4.990 Ft<span>/hó</span></div>
+        <ul class="features">
+            <li>1 Felhasználó</li>
+            <li>5GB Tárhely</li>
+            <li>Email támogatás</li>
+            <li>Alap statisztikák</li>
+        </ul>
+        <a href="#" class="btn btn-outline">Kiválasztom</a>
+    </div>
+
+    <div class="pricing-card popular">
+        <div class="popular-badge">Legnépszerűbb</div>
+        <h3>Profi</h3>
+        <div class="price">13.990 Ft<span>/hó</span></div>
+        <ul class="features">
+            <li>5 Felhasználó</li>
+            <li>50GB Tárhely</li>
+            <li>Prioritásos támogatás</li>
+            <li>Haladó statisztikák</li>
+            <li>Egyedi domain</li>
+        </ul>
+        <a href="#" class="btn">Kiválasztom</a>
+    </div>
+
+    <div class="pricing-card">
+        <h3>Extra</h3>
+        <div class="price">24.990 Ft<span>/hó</span></div>
+        <ul class="features">
+            <li>Korlátlan felhasználó</li>
+            <li>500GB Tárhely</li>
+            <li>24/7 Telefonos ügyfélszolgálat</li>
+            <li>Teljes API hozzáférés</li>
+        </ul>
+        <a href="#" class="btn btn-outline">Kiválasztom</a>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI API-k | Termékek</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f9f7ff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #6a0dad, #8e2de2);
+    color: white;
+    padding: 25px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: rgba(255,255,255,0.2);
+}
+
+main {
+    padding: 50px 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #6a0dad;
+    font-size: 2.2rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(106,13,173,0.15);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+}
+
+.product-card h3 {
+    color: #6a0dad;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #8e2de2;
+}
+
+.product-card button {
+    background: linear-gradient(135deg, #6a0dad, #8e2de2);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.product-card button:hover {
+    opacity: 0.85;
+}
+
+footer {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
+</style>
+<body>
+
+<header>
+    <div class="container">
+        <h1>AI API Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="verseny.html">Főoldal</a></li>
+                <li><a href="product.html" class="active">AI API-k</a></li>
+                <li><a href="priceing.html">Árazás</a></li>
+                <li><a href="team.html">Csapat</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2>Elérhető AI API-k</h2>
+
+    <section class="products">
+
+        <div class="product-card">
+            <h3>Text AI API</h3>
+            <p>Szöveg generálás, összefoglalás, fordítás.</p>
+            <span class="price">API alapú</span>
+            <button>Dokumentáció</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Chatbot AI API</h3>
+            <p>Intelligens chatbot webre és appokra.</p>
+            <span class="price">Valós idejű</span>
+            <button>Dokumentáció</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Image AI API</h3>
+            <p>Képgenerálás és képfeldolgozás AI-val.</p>
+            <span class="price">HD támogatás</span>
+            <button>Dokumentáció</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Speech AI API</h3>
+            <p>Beszédfelismerés és szövegfelolvasás.</p>
+            <span class="price">Multinyelvű</span>
+            <button>Dokumentáció</button>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 AI API Platform</p>
+</footer>
+
+</body>
+</html>

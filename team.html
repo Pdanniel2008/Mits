@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csapatunk - Lila & Fehér</title>
+    <!DOCTYPE html>
+    <html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Csapatunk - Lila & Fehér</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #ffffff;
+                margin: 0;
+                padding: 50px 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .section-title {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+    
+            .section-title h2 {
+                color: #ffffff;
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+    
+            .section-title .underline {
+                width: 60px;
+                height: 4px;
+                background: #8e44ad;
+                margin: 0 auto;
+                border-radius: 2px;
+            }
+
+            .team-container {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                flex-wrap: wrap;
+                max-width: 1200px;
+            }
+    
+            .team-card {
+                background: #9606a3;
+                width: 280px;
+                border-radius: 20px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(142, 68, 173, 0.1);
+                transition: all 0.3s ease;
+                text-align: center;
+                padding-bottom: 25px;
+                border-bottom: 4px solid transparent;
+            }
+    
+            .team-card:hover {
+                transform: translateY(-10px);
+                border-bottom: 4px solid #8e44ad;
+            }
+    
+            .image-wrapper {
+                padding: 30px 0 20px 0;
+            }
+    
+            .team-card img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 4px solid #f0e6ff;
+                transition: border-color 0.3s ease;
+            }
+    
+            .team-card:hover img {
+                border-color: #8e44ad;
+            }
+
+            .team-card h3 {
+                margin: 10px 0 5px 0;
+                color: #ffffff;
+                font-size: 22px;
+            }
+    
+            .team-card p {
+                color: #8e44ad;
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+            }
+    
+            .social-links {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+    
+            .social-icon {
+                width: 35px;
+                height: 35px;
+                background: #f0e6ff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #8e44ad;
+                text-decoration: none;
+                font-size: 14px;
+                transition: 0.3s;
+            }
+    
+            .social-icon:hover {
+                background: #8e44ad;
+                color: #fff;
+            }
+            
+        header {
+         background: linear-gradient(135deg, #6a0dad, #ffffff);
+        color: white;
+        padding: 25px 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        text-decoration: white;
+        }
+
+        header h1 {
+        text-align: center;
+        margin-bottom: 15px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>AI API Platform</h1>
+                <nav>
+                    <ul>
+                        <li><a href="verseny.html">Főoldal</a></li>
+                        <li><a href="product.html" class="active">AI API-k</a></li>
+                        <li><a href="priceing.html">Árazás</a></li>
+                        <li><a href="team.html">Csapat</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="section-title">
+            <h2>Ismerd meg a csapatunkat</h2>
+            <div class="underline"></div>
+        </div>
+    
+        <div class="team-container">
+            
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="person-woman-smiling-studio-portrait_1303-2281.avif" alt="Szonja">
+                </div>
+                <h3>Ba Szonja</h3>
+                <p>UI/UX Designer</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Be</a>
+                    <a href="#" class="social-icon">Ig</a>
+                </div>
+            </div>
+    
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="istockphoto-1335941248-612x612.jpg" alt="Elek">
+                </div>
+                <h3>Gipsz Elek</h3>
+                <p>Lead Developer</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Gh</a>
+                    <a href="#" class="social-icon">Tw</a>
+                </div>
+            </div>
+    
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="bc07b823-2ff4-43b6-994a-ef326a18eb4a.jpg" alt="Zoltán">
+                </div>
+                <h3>Fiká Zoltán</h3>
+                <p>Marketing Manager</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">In</a>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="fdsfsdf.jfif" alt="John">
+                </div>
+                <h3>John Pork</h3>
+                <p>Community Manager</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">In</a>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="serious-young-african-man-standing-isolated_171337-9633.avif" alt="Ödön">
+                </div>
+                <h3>Tök Ödön</h3>
+                <p>Restock Manager</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">In</a>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="image-wrapper">
+                    <img src="man-8078578_1280.jpg" alt="Imre">
+                </div>
+                <h3>Füty Imre</h3>
+                <p>Second Developer</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Li</a>
+                    <a href="#" class="social-icon">Fb</a>
+                    <a href="#" class="social-icon">In</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </body>
+    </html>
